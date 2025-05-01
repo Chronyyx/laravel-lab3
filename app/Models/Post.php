@@ -16,6 +16,7 @@ class Post extends Model
         return $this->belongsTo(Author::class);
     }
 
+    // Relationship: Post has many comments
     public function comments()
     {
         return $this->hasMany(Comment::class);
